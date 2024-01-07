@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -26,6 +27,12 @@
         thead, tfoot{
             background-color:gray;
             color:white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+            
         }
         tbody > tr:nth-child(odd){ /*2n-1*/
             background-color:rgb(187, 182, 182);
@@ -178,5 +185,6 @@
         </tbody>
         
     </table>
+    
 </body>
 </html>
